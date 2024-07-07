@@ -1,3 +1,7 @@
+// vars/sonarQubeAnalysis.groovy
+
+import src.SonarQube
+
 def call(String projectKey, String sourcesDir, String sonarToken) {
-    new src.SonarQube().call(projectKey, sourcesDir, sonarToken)
+    new SonarQube().call(projectKey, sourcesDir, sonarToken)
 }
