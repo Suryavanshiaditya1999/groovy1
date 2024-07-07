@@ -1,7 +1,12 @@
-// vars/sonarQubeAnalysis.groovy
-def call(String projectKey, String sourceDir = '.') {
-    def scannerHome = org.example.Utilities.getScannerHome()
+def call() {
+    def scannerHome = tool name: 'SonarQube-Scanner'
     withSonarQubeEnv('SonarQube') {
-        org.example.Utilities.runSonarScanner(scannerHome, projectKey, sourceDir, 'http://localhost:9000', env.SONARQUBE_TOKEN)
+        sh """
+        ${scannerHome}/bin/sonar-scanner \
+        -Dsonar.projectKey=attendance-api \
+        -Dsonar.sources=. \
+        -Dsonar.host.url=http://localhost:9000 \
+        -Dsonar.login=${env.SONARQUBE_TOKEN}
+        """
     }
 }
