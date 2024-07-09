@@ -7,7 +7,7 @@ def call() {
         python3 -m venv myenv
         . myenv/bin/activate
         echo "Workspace directory: ${workspaceDir}"
-        pip install -r ${workspaceDir}/requirements.txt
+        pip install -r ${workspaceDir}/requirments.txt
         pip install coverage
         pip install pytest
         coverage run -m pytest
