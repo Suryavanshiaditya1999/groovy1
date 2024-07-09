@@ -1,4 +1,4 @@
-import org.Opstree.jenkins.stages.BuildStage
+import CheckoutStage
 
 def call() {
     new CheckoutStage().call()
