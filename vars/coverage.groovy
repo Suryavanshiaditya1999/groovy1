@@ -1,4 +1,4 @@
-import src.setupVirtualEnvironment
+import CoveragePython
 
 def call() {
     setupVirtualEnvironment()
