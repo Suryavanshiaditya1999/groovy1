@@ -1,7 +1,5 @@
 def call() {
-    def python = tool name: 'Python3', type: 'hudson.plugins.python.PythonInstallation'
-    
-    // Define steps for setting up virtual environment
+    // Your setup steps here
     sh '''
         python3 -m venv myenv
         . myenv/bin/activate
