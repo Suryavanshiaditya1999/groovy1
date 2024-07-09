@@ -1,4 +1,5 @@
-def call() {
+import src.setupVirtualEnvironment
 
-    new src.setupVirtualEnvironment().call()
+def call() {
+    setupVirtualEnvironment()
 }
