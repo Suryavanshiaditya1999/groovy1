@@ -1,9 +1,9 @@
-import setupVirtualEnvironment
+import src.setupVirtualEnvironment
 
 def call() {
     setupVirtualEnvironment()
-    
-    // Additional steps after setting up the environment
+
+    // Add your remaining steps here, such as installing dependencies and running tests
     sh '''
         pip install -r requirements.txt
         pip install coverage
