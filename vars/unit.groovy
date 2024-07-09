@@ -1,4 +1,4 @@
 def call() {
-    def utils = new org.jenkinsci.pipeline.Utils(this)
-    utils.setUpVirtualEnv()
+    def unitTesting = new org.jenkinsci.pipeline.UnitTesting(this)
+    unitTesting.setup()
 }
