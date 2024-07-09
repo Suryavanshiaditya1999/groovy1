@@ -1,13 +1,13 @@
 package org.jenkinsci.pipeline
 
-class Utils implements Serializable {
+class UnitTesting implements Serializable {
     def steps
 
-    Utils(steps) {
+    UnitTesting(steps) {
         this.steps = steps
     }
 
-    def setUpVirtualEnv() {
+    def setup() {
         steps.sh '''
             python3 -m venv venv
             . venv/bin/activate
