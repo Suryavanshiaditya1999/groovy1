@@ -1,5 +1,5 @@
 import CoveragePython
 
 def call() {
-    setupVirtualEnvironment()
+     new CoveragePython().call()
 }
