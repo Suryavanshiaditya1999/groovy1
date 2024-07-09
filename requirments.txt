@@ -1,0 +1,10 @@
+psycopg2
+redis
+flask
+peewee
+python-json-logger
+PyYAML
+Flask-Caching
+voluptuous
+flasgger
+prometheus_flask_exporter
