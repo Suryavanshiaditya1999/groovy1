@@ -1,5 +1,5 @@
 import setupVirtualEnvironment
 
 def call() {
-    setupVirtualEnvironment()
+    new src.setupVirtualEnvironment().call()
 }
